@@ -521,9 +521,9 @@
         const STUDENT_NAME_KEY = "certiport_student_name";
 
         // =============================================================
-        // FORMSPREE CONFIGURATION: Replace with your free Formspree ID
+        // FORMSPREE CONFIGURATION: Integrated Formspree Form ID
         // =============================================================
-        const FORMSPREE_FORM_ID = "xaqkykzj"; // Put your Formspree ID key here!
+        const FORMSPREE_FORM_ID = "xaqkykzj"; // Linked to your secure form endpoint
 
         const initialTime = 40 * 60; // 40 minutes in seconds
         const WARNING_TIME = 5 * 60; // 5 minutes warning in seconds
@@ -738,268 +738,6 @@
             },
             {
                 type: "multiple-choice",
-                question: "Which two CSS units are designed to scale directly and independently with the size of the user's viewport, unlike the % unit, which scales indirectly?",
-                answers: [
-                    { text: "Root Element Font Size (rem) and Element Font Size (em).", correct: false },
-                    { text: "Pixel (px) and Element Font Size (em).", correct: false },
-                    { text: "Percentage (%) and Root Element Font Size (rem).", correct: false },
-                    { text: "Viewport Width (vw) and Viewport Height (vh).", correct: true }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "What is the standard, unstyled default color assigned to an unvisited hyperlink (using the a:link pseudo-class) by most modern web browsers (user agent stylesheets)?",
-                answers: [
-                    { text: "blue", correct: true },
-                    { text: "purple", correct: false },
-                    { text: "red", correct: false },
-                    { text: "yellow", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "A developer needs to horizontally center a block-level <div> container that has a fixed width of 960px within its 100% wide parent container. Which is the standard and most direct CSS rule used to achieve this horizontal centering in the normal document flow?",
-                answers: [
-                    { text: "text-align: center;", correct: false },
-                    { text: "align-items: center;", correct: false },
-                    { text: "position: absolute; left: 50%;", correct: false },
-                    { text: "margin: 0 auto;", correct: true }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "If a user clicks on the following link: <a href='https://www.yahoo.com' target='_blank'>Yahoo</a>, what best describes the link's type and resulting action?",
-                answers: [
-                    { text: "It is an internal link that opens in the same tab, ignoring _blank.", correct: false },
-                    { text: "It is an absolute URL (external link) that opens the Yahoo website in a new tab.", correct: true },
-                    { text: "It is a relative link that opens in a new tab, loading the local file https://www.yahoo.com.", correct: false },
-                    { text: "It is a relative link that opens the local file nature.html in the current tab.", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "Which box-sizing value is considered the modern standard for responsive design because it calculates the defined width and height to include the element's content, padding, and border?",
-                answers: [
-                    { text: "border-box", correct: true },
-                    { text: "inherit", correct: false },
-                    { text: "padding-box", correct: false },
-                    { text: "content-box", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "To create a destination point (the actual 'bookmark') within a long HTML document that a link can jump to, which attribute is used on the target element (e.g., a heading tag)?",
-                answers: [
-                    { text: 'rel="bookmark"', correct: false },
-                    { text: 'target="_self"', correct: false },
-                    { text: "id", correct: true },
-                    { text: 'class="anchor"', correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "By technical definition, what is the primary 'usage' of the <select> tag in an HTML form?",
-                answers: [
-                    { text: "To create a multi-line text area for user comments.", correct: false },
-                    { text: "To provide a container for a dropdown menu that allows users to pick from a set list of options.", correct: true },
-                    { text: "To link the form to an external database.", correct: false },
-                    { text: "To style a group of radio buttons with CSS.", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "What does an element with position: fixed; use as its containing block (the reference point for its coordinates)?",
-                answers: [
-                    { text: "The viewport (the browser window).", correct: true },
-                    { text: "The previous sibling element.", correct: false },
-                    { text: "The <body> element.", correct: false },
-                    { text: "Its nearest positioned ancestor.", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "In CSS, what does the em unit use as its reference size?",
-                answers: [
-                    { text: "The width of the viewport.", correct: false },
-                    { text: "The default browser font size only.", correct: false },
-                    { text: "The font size of the parent element.", correct: true },
-                    { text: "The height of the current element.", correct: false }
-                ]
-            },
-            {
-                type: "multiple-choice",
-                question: "Which overflow property value instructs the browser to act intelligently by displaying scrollbars only when the content is too large for the container, thereby preventing unnecessary empty scrollbars from appearing?",
-                answers: [
-                    { text: "hidden", correct: false },
-                    { text: "auto", correct: true },
-                    { text: "visible", correct: false },
-                    { text: "scroll", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "Which HTML table cell attribute is used to merge a single cell across multiple columns (horizontally), effectively making the cell wider than a standard cell?",
-                answers: [
-                    { text: "rowspan", correct: false },
-                    { text: "span", correct: false },
-                    { text: "cellmerge", correct: false },
-                    { text: "colspan", correct: true }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: 'Which HTML element is commonly used to provide a title or description for a table?',
-                answers: [
-                    { text: "<caption>", correct: true },
-                    { text: "<summary>", correct: false },
-                    { text: "<label>", correct: false },
-                    { text: "<title>", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "By technical definition, which CSS property value calculates the total width of an element by adding the width, padding, and border values together?",
-                answers: [
-                    { text: "box-sizing: border-box;", correct: false },
-                    { text: "box-sizing: padding-box;", correct: false },
-                    { text: "box-sizing: inherit;", correct: false },
-                    { text: "box-sizing: content-box;", correct: true }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "If you are using a mobile-first approach, the styles inside the block following @media only screen and (min-width: 768px) will only take effect when the viewport is how wide?",
-                answers: [
-                    { text: "Greater than or equal to 768px (e.g., tablet and desktop sizes).", correct: true },
-                    { text: "Less than or equal to 767px (e.g., mobile devices).", correct: false },
-                    { text: "Exactly 768px (no larger or smaller).", correct: false },
-                    { text: "Between 768px and 1024px (a specific tablet range).", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "The title attribute on an <img> tag has which primary function from a user experience standpoint?",
-                answers: [
-                    { text: "It ensures the image aligns with the nearest text caption.", correct: false },
-                    { text: "It provides a brief, non-visible description for search engine optimization (SEO).", correct: false },
-                    { text: "It displays a visible title or caption below the image at all times.", correct: false },
-                    { text: "It displays a tooltip or hover text when the user places their mouse cursor over the image.", correct: true }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: 'By definition, what is the primary usage of a group of <input type="radio"> elements?',
-                answers: [
-                    { text: "To trigger a JavaScript function without submitting the form.", correct: false },
-                    { text: "To allow the user to select as many options as they want from a list.", correct: false },
-                    { text: "To create a multi-line text entry area.", correct: false },
-                    { text: "To allow the user to select only one option from a mutually exclusive set of choices.", correct: true }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "An element is set to position: absolute;. If its immediate parent has position: static;, what will the element be positioned relative to?",
-                answers: [
-                    { text: "The immediate parent element, regardless of its position property.", correct: false },
-                    { text: "Its nearest positioned ancestor.", correct: true },
-                    { text: "The position of its closest sibling element.", correct: false },
-                    { text: "The entire document (the <body> tag).", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "Which box-sizing value is used to simplify 'Usage' by ensuring that if you set an element to width: 500px, it will always remain exactly 500px wide, regardless of how much padding or border you add?",
-                answers: [
-                    { text: "content-box", correct: false },
-                    { text: "border-box", correct: true },
-                    { text: "initial", correct: false },
-                    { text: "Static", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "Under which specific condition will the content placed inside a <noscript> tag be rendered and visible to the user?",
-                answers: [
-                    { text: "When the external JavaScript file fails to load due to a 404 error.", correct: false },
-                    { text: "When the user's internet connection is slow.", correct: false },
-                    { text: "When JavaScript is either disabled in the browser settings or not supported by the browser.", correct: true },
-                    { text: "When the page is being viewed on a mobile device.", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "The _______symbol selects only elements that are the immediate, direct children of the preceding element.",
-                answers: [
-                    { text: "+", correct: false },
-                    { text: "( )", correct: false },
-                    { text: "~", correct: false },
-                    { text: ">", correct: true }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "In terms of 'usage,' why is it a best practice to use the <label> element with the for attribute pointing to an input's id?",
-                answers: [
-                    { text: "It hides the input field from the user.", correct: false },
-                    { text: "It automatically validates the email format.", correct: false },
-                    { text: "It changes the text color to red if there is an error.", correct: false },
-                    { text: "It increases the clickable area, allowing users to click the text to focus the input, which improves accessibility.", correct: true }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
-                question: "Which is the required HTML attribute that tells the browser the file path or URL where the image resource to be embedded is located?",
-                answers: [
-                    { text: "link", correct: false },
-                    { text: "href", correct: false },
-                    { text: "path", correct: false },
-                    { text: "src", correct: true }
-                ],
-                state: 'unanswered',
-                userAnswer: null
-            },
-            {
-                type: "multiple-choice",
                 question: "You are in the process of building a style sheet. You want to make sure that paragraphs inside of articles have a beige background. Using the dropdown arrow, choose the correct syntax for the line of code to make this happen.",
                 answers: [
                     { text: "Article ~ p {background-color: beige}", correct: false },
@@ -1018,9 +756,11 @@
                     { text: "It adds built-in playback controls like play, pause, and volume.", correct: true },
                     { text: "It hides the media element from the webpage.", correct: false },
                     { text: "It changes the media file format for browser compatibility.", correct: false }
-                ]
+                ],
+                state: 'unanswered',
+                userAnswer: null
             },
-                        
+            
             // --- ORDER/SEQUENCE EXAMPLES (Type: order) ---
             {
                 type: "order", 
@@ -1760,7 +1500,7 @@
 
             if (timedOut) {
                  finalScoreMessage.textContent = `Time's Up! Your Score is ${score} out of ${questions.length} (${scorePercentage}%)`;
-                 finalScoreMessage.style.color = '#f44336';
+                 finalScoreMessage.style.color = '#ff5252';
             } else {
                  finalScoreMessage.textContent = `Quiz Complete! Your Final Score is ${score} out of ${questions.length} (${scorePercentage}%)`;
                  finalScoreMessage.style.color = passed ? '#4caf50' : '#f44336';
@@ -1806,7 +1546,7 @@
 
             // Only attempt fetch routing if Formspree ID has been entered in the config
             if (FORMSPREE_FORM_ID && FORMSPREE_FORM_ID !== "YOUR_FORMSPREE_FORM_ID_HERE") {
-                fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+                fetch("https://formspree.io/f/" + FORMSPREE_FORM_ID, {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',
@@ -1816,7 +1556,7 @@
                 })
                 .then(response => {
                     if (response.ok) {
-                        statusBox.textContent = `✅ Results securely sent to instructor email (${INSTRUCTOR_EMAIL}).`;
+                        statusBox.textContent = `✅ Results securely sent to instructor email.`;
                         statusBox.style.color = "#4caf50";
                     } else {
                         statusBox.textContent = "⚠️ Delivery failed. Please notify your instructor.";
@@ -1870,7 +1610,9 @@
 
         // Native dragend listener to make drops outside zones seamless
         function dragEnd(e) {
-            e.target.classList.remove('dragging');
+            if (e.target) {
+                e.target.classList.remove('dragging');
+            }
             draggedItem = null;
         }
 
@@ -1903,7 +1645,9 @@
                     container.appendChild(draggedItem);
                 }
             }
-            draggedItem.classList.remove('dragging');
+            if (draggedItem) {
+                draggedItem.classList.remove('dragging');
+            }
             draggedItem = null;
             
             const currentQuestion = questions[currentQuestionIndex];
@@ -1939,7 +1683,9 @@
                 }
             }
             
-            draggedItem.classList.remove('dragging');
+            if (draggedItem) {
+                draggedItem.classList.remove('dragging');
+            }
             draggedItem = null;
 
             const currentQuestion = questions[currentQuestionIndex];
