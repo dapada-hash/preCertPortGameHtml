@@ -830,15 +830,13 @@
             },
             {
                 type: "multiple-choice",
-                question: "By definition, what does an element with position: fixed; use as its containing block (the reference point for its coordinates)?",
+                question: "In CSS, what does the em unit use as its reference size?",
                 answers: [
-                    { text: "The previous sibling element.", correct: false },
-                    { text: "The viewport (the browser window).", correct: true },
-                    { text: "The <body> element.", correct: false },
-                    { text: "Its nearest positioned ancestor.", correct: false }
-                ],
-                state: 'unanswered',
-                userAnswer: null
+                    { text: "The width of the viewport.", correct: false },
+                    { text: "The default browser font size only.", correct: false },
+                    { text: "The font size of the parent element.", correct: true },
+                    { text: "The height of the current element.", correct: false }
+                ]
             },
             {
                 type: "multiple-choice",
@@ -866,12 +864,12 @@
             },
             {
                 type: "multiple-choice",
-                question: 'Which statement correctly defines the usage of the <input type="checkbox"> element?',
+                question: 'Which HTML element is commonly used to provide a title or description for a table?',
                 answers: [
-                    { text: "It is used when a user can select zero, one, or multiple independent options from a list.", correct: true },
-                    { text: "It is used to submit the form to the server immediately.", correct: false },
-                    { text: "It is used to hide sensitive text, like a password.", correct: false },
-                    { text: "It is used for selecting exactly one option from a list.", correct: false }
+                    { text: "<caption>", correct: true },
+                    { text: "<summary>", correct: false },
+                    { text: "<label>", correct: false },
+                    { text: "<title>", correct: false }
                 ],
                 state: 'unanswered',
                 userAnswer: null
@@ -1008,7 +1006,17 @@
                 state: 'unanswered',
                 userAnswer: null
             },
-            
+            {
+                type: "multiple-choice",
+                question: "What is the purpose of the controls attribute in an HTML <audio> or <video> element?",
+                answers: [
+                    { text: "It automatically starts the media when the page loads.", correct: false },
+                    { text: "It adds built-in playback controls like play, pause, and volume.", correct: true },
+                    { text: "It hides the media element from the webpage.", correct: false },
+                    { text: "It changes the media file format for browser compatibility.", correct: false }
+                ]
+            },
+                        
             // --- ORDER/SEQUENCE EXAMPLES (Type: order) ---
             {
                 type: "order", 
@@ -1028,6 +1036,13 @@
                 type: "order", 
                 question: "Which of the following represents the correct conceptual sequence when applying the three core Flexbox properties to a container?",
                 correctOrder: ["<display: flex;>", "<justify-content>", "<align-items>"],
+                state: 'unanswered',
+                userAnswer: null
+            },
+            {
+                type: "order",
+                question: "Which of the following represents the correct order of the CSS box model from innermost to outermost?",
+                correctOrder: ["Content", "Padding", "Border", "Margin"],
                 state: 'unanswered',
                 userAnswer: null
             },
